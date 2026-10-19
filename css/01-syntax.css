@@ -3,3 +3,43 @@
    Что здесь пишем: селекторы, комментарии, сброс отступов, базовые правила для a, img, списков
    ========================================================= */
 
+html {
+   scroll-behavior: smooth;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+figure,
+dl,
+dd,
+ul,
+ol,
+fieldset,
+legend {
+   margin: 0;
+   padding: 0;
+}
+
+ul[class],
+ol[class] {
+   list-style: none;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+fieldset {
+   min-width: 0;
+   border: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
