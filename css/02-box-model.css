@@ -1,5 +1,123 @@
 /* =========================================================
    02 · БЛОЧНАЯ МОДЕЛЬ
-   Что здесь пишем: box-sizing, padding, margin, border, border-radius у секций, кнопок, карточек
+   box-sizing, padding, margin, border, border-radius у секций, кнопок, карточек
    ========================================================= */
 
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+.container {
+   margin-inline: auto;
+}
+
+/* Воздух между секциями — главный приём «дорогого» вида */
+.section {
+   padding-block: var(--section-space);
+}
+
+.eyebrow {
+   margin-bottom: 1rem;
+}
+
+.section__title {
+   margin-bottom: 3.5rem;
+}
+
+/* Если сразу под заголовком идёт подзаголовок — отступ меньше */
+.section__title:has(+ .section__lead) {
+   margin-bottom: 1.25rem;
+}
+
+.section__lead {
+   margin-bottom: 3rem;
+}
+
+.btn {
+   padding: 0.95rem 1.7rem;
+   border: 1px solid transparent;
+   border-radius: 999px;
+}
+
+.nav__link {
+   display: block;
+   padding: 0.55rem 1rem;
+   border-radius: 999px;
+}
+
+.hero__inner {
+   padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.hero__badge {
+   margin-bottom: 1.5rem;
+}
+
+.stat {
+   padding-top: 1.25rem;
+   border-top: 1px solid var(--border);
+}
+
+.about__text p+p {
+   margin-top: 1.25rem;
+}
+
+.facts {
+   margin-top: 2.5rem;
+}
+
+.facts__item {
+   padding-block: 1rem;
+   border-top: 1px solid var(--border);
+}
+
+.skill-card {
+   padding-top: 1.5rem;
+   border-top: 1px solid var(--border);
+}
+
+.skill-card__title {
+   margin-block: 0.75rem 0.6rem;
+}
+
+.skill-card__text {
+   margin-bottom: 1.25rem;
+}
+
+.tag {
+   padding: 0.25rem 0.75rem;
+   border-radius: 999px;
+}
+
+.marquee {
+   margin-top: 5rem;
+}
+
+.project-card__media {
+   border-radius: var(--radius-l);
+}
+
+.project-card__body {
+   padding-top: 1.5rem;
+}
+
+.contact__info {
+   padding-right: 1rem;
+}
+
+.form {
+   padding: clamp(1.5rem, 4vw, 2.75rem);
+   border: 1px solid var(--border);
+   border-radius: var(--radius-l);
+}
+
+.timeline__item {
+   padding-bottom: 2.75rem;
+}
+
+.site-footer {
+   padding-block: 2.5rem;
+   border-top: 1px solid var(--border);
+}
