@@ -3,3 +3,33 @@
    Что здесь пишем: палитра в :root, var(), oklch(), light-dark(), color-mix(): рефакторим то, что написали раньше
    ========================================================= */
 
+:root {
+   color-scheme: light dark;
+
+   --lime: oklch(0.91 0.21 125);
+   --violet: oklch(0.66 0.21 295);
+   --pink: oklch(0.74 0.19 350);
+   --on-lime: oklch(0.2 0.04 285);
+
+   --bg: light-dark(oklch(0.985 0.004 95), oklch(0.15 0.025 285));
+   --surface: light-dark(oklch(1 0 0), oklch(0.2 0.03 285));
+   --surface-2: light-dark(oklch(0.96 0.008 290), oklch(0.25 0.04 285));
+   --text: light-dark(oklch(0.2 0.03 285), oklch(0.96 0.008 295));
+   --muted: light-dark(oklch(0.5 0.03 285), oklch(0.74 0.03 290));
+   --border: light-dark(oklch(0.9 0.01 290), oklch(0.3 0.04 285));
+   --accent: light-dark(oklch(0.48 0.23 295), oklch(0.91 0.21 125));
+   --marker: light-dark(oklch(0.91 0.21 125), oklch(0.91 0.21 125 / 0.4));
+   --shadow-color: light-dark(oklch(0.3 0.08 285 / 0.14), oklch(0 0 0 / 0.45));
+
+   --gutter: clamp(1.25rem, 4vw, 2.5rem);
+   --section-space: clamp(5rem, 11vw, 9.5rem);
+   --header-h: 4.5rem;
+   --radius-m: 1rem;
+   --radius-l: 1.75rem;
+   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+   background: var(--bg);
+   color: var(--text);
+}
