@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,11 +14,14 @@
 
   <!-- 🎯 ТЕМА 1 (Синтаксис): подключаем ОДИН файл style.css.
        Внутри него через @import собраны 17 модулей из папки css/ — по одному на тему. -->
-  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <!-- 🎯 ТЕМА 4 (CSS-переменные): палитра, отступы и радиусы живут в :root (css/04-variables.css).
      Здесь, на <body>, увидим, как переменные «раздаются» всей странице. -->
+
 <body>
 
   <!-- 🎯 ТЕМА 7 (Псевдоклассы): ссылка «Перейти к содержимому» видна только по :focus-visible (клавиша Tab).
@@ -32,7 +36,8 @@
        (скрытый чекбокс + label, JavaScript не нужен). -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="logo" href="#top" aria-label="Алекс Кодов — на главную">Алекс Кодов<span class="logo__dot" aria-hidden="true"></span></a>
+      <a class="logo" href="#top" aria-label="Алекс Кодов — на главную">Алекс Кодов<span class="logo__dot"
+          aria-hidden="true"></span></a>
 
       <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Открыть меню">
       <label class="menu-btn" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
@@ -68,7 +73,7 @@
           <!-- 🎯 ТЕМА 5 (Стили текста): font-size через clamp(), line-height, letter-spacing, text-wrap: balance.
                ТЕМА 6 (Шрифты): заголовочный шрифт Unbounded.
                ТЕМА 13 (Градиенты): span.hero__accent — «маркер» под словами через linear-gradient в background. -->
-          <h1 class="hero__title">
+          <h1 class="hero__title" id="superh">
             Делаю <span class="hero__accent">чистый</span> и&nbsp;быстрый интерфейс
           </h1>
 
@@ -92,7 +97,7 @@
              ТЕМА 17 (Анимация): плашки «парят» — @keyframes с translate. -->
         <figure class="hero__visual">
           <img class="portrait" src="assets/img/portrait.webp" width="1000" height="1250"
-               alt="Место для вашего портрета: заменить на своё фото">
+            alt="Место для вашего портрета: заменить на своё фото">
           <span class="chip chip--code">&lt;html&gt;</span>
           <span class="chip chip--css">{ css }</span>
         </figure>
@@ -123,7 +128,7 @@
                ТЕМА 15 (Трансформации): scale() при наведении, overflow: hidden у рамки. -->
           <figure class="about__photo">
             <img src="assets/img/about-photo.webp" width="1000" height="1250" loading="lazy"
-                 alt="Редактор кода с CSS-стилями для первого экрана">
+              alt="Редактор кода с CSS-стилями для первого экрана">
           </figure>
 
           <div class="about__text">
@@ -142,10 +147,22 @@
                  ТЕМА 11 (Grid): сетка «подпись | значение».
                  ТЕМА 7 (Псевдоклассы): :last-child убирает нижнюю линию. -->
             <dl class="facts">
-              <div class="facts__item"><dt>Город</dt><dd>Москва, удалённо</dd></div>
-              <div class="facts__item"><dt>Фокус</dt><dd>Frontend, UI-вёрстка</dd></div>
-              <div class="facts__item"><dt>Уровень</dt><dd>Junior</dd></div>
-              <div class="facts__item"><dt>Языки</dt><dd>Русский, English B1</dd></div>
+              <div class="facts__item">
+                <dt>Город</dt>
+                <dd>Москва, удалённо</dd>
+              </div>
+              <div class="facts__item">
+                <dt>Фокус</dt>
+                <dd>Frontend, UI-вёрстка</dd>
+              </div>
+              <div class="facts__item">
+                <dt>Уровень</dt>
+                <dd>Junior</dd>
+              </div>
+              <div class="facts__item">
+                <dt>Языки</dt>
+                <dd>Русский, English B1</dd>
+              </div>
             </dl>
           </div>
 
@@ -169,42 +186,54 @@
             <h3 class="skill-card__title">HTML</h3>
             <p class="skill-card__text">Семантическая разметка, доступность, формы, мета-теги и основы SEO.</p>
             <ul class="tags" aria-label="Темы HTML">
-              <li class="tag">семантика</li><li class="tag">a11y</li><li class="tag">формы</li>
+              <li class="tag">семантика</li>
+              <li class="tag">a11y</li>
+              <li class="tag">формы</li>
             </ul>
           </li>
           <li class="skill-card">
             <h3 class="skill-card__title">CSS</h3>
             <p class="skill-card__text">Flexbox, Grid, переменные, анимации и современные возможности языка.</p>
             <ul class="tags" aria-label="Темы CSS">
-              <li class="tag">flexbox</li><li class="tag">grid</li><li class="tag">oklch</li>
+              <li class="tag">flexbox</li>
+              <li class="tag">grid</li>
+              <li class="tag">oklch</li>
             </ul>
           </li>
           <li class="skill-card">
             <h3 class="skill-card__title">Адаптивность</h3>
             <p class="skill-card__text">Mobile first, fluid-типографика, единицы rem и svh, контейнерные запросы.</p>
             <ul class="tags" aria-label="Темы адаптивности">
-              <li class="tag">mobile first</li><li class="tag">clamp()</li><li class="tag">@container</li>
+              <li class="tag">mobile first</li>
+              <li class="tag">clamp()</li>
+              <li class="tag">@container</li>
             </ul>
           </li>
           <li class="skill-card">
             <h3 class="skill-card__title">Git и GitHub</h3>
             <p class="skill-card__text">Ветки, коммиты, pull request и публикация проекта на GitHub Pages.</p>
             <ul class="tags" aria-label="Темы Git">
-              <li class="tag">branch</li><li class="tag">PR</li><li class="tag">Pages</li>
+              <li class="tag">branch</li>
+              <li class="tag">PR</li>
+              <li class="tag">Pages</li>
             </ul>
           </li>
           <li class="skill-card">
             <h3 class="skill-card__title">Анимации</h3>
             <p class="skill-card__text">Transition, keyframes и аккуратные микровзаимодействия без лишнего шума.</p>
             <ul class="tags" aria-label="Темы анимации">
-              <li class="tag">transition</li><li class="tag">keyframes</li><li class="tag">transform</li>
+              <li class="tag">transition</li>
+              <li class="tag">keyframes</li>
+              <li class="tag">transform</li>
             </ul>
           </li>
           <li class="skill-card">
             <h3 class="skill-card__title">Дизайн в вебе</h3>
             <p class="skill-card__text">Цвет, типографика, сетка и ритм: перевожу макеты Figma в код.</p>
             <ul class="tags" aria-label="Темы дизайна">
-              <li class="tag">Figma</li><li class="tag">палитры</li><li class="tag">ритм</li>
+              <li class="tag">Figma</li>
+              <li class="tag">палитры</li>
+              <li class="tag">ритм</li>
             </ul>
           </li>
         </ul>
@@ -214,8 +243,22 @@
              ТЕМА 14 (Маски): края плавно исчезают через mask-image: linear-gradient(...). -->
         <div class="marquee" aria-hidden="true">
           <ul class="marquee__track">
-            <li>HTML5</li><li>CSS3</li><li>Flexbox</li><li>Grid</li><li>oklch</li><li>Git</li><li>Figma</li><li>a11y</li>
-            <li>HTML5</li><li>CSS3</li><li>Flexbox</li><li>Grid</li><li>oklch</li><li>Git</li><li>Figma</li><li>a11y</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>oklch</li>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>a11y</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>oklch</li>
+            <li>Git</li>
+            <li>Figma</li>
+            <li>a11y</li>
           </ul>
         </div>
       </div>
@@ -226,7 +269,8 @@
       <div class="container">
         <p class="eyebrow">03 — Проекты</p>
         <h2 class="section__title">Избранные работы</h2>
-        <p class="section__lead">Шесть проектов из курса. Обложки специально разных пропорций — так мы научимся делать ровную сетку.</p>
+        <p class="section__lead">Шесть проектов из курса. Обложки специально разных пропорций — так мы научимся делать
+          ровную сетку.</p>
 
         <!-- 🎯 ТЕМА 11 (Grid): сетка проектов — 2 колонки на десктопе, 1 на телефоне;
              первая и последняя карточки — «главные»: grid-column: 1 / -1 (на всю ширину). -->
@@ -241,12 +285,17 @@
           <article class="project-card project-card--featured">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Дашборд аналитики»">
               <img src="assets/img/project-1.webp" width="1600" height="900" loading="lazy"
-                   alt="Интерфейс аналитического дашборда с графиком">
+                alt="Интерфейс аналитического дашборда с графиком">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Дашборд аналитики</h3>
-              <p class="project-card__text">Адаптивная панель с карточками метрик и графиком. Вся вёрстка — на Grid и Flexbox.</p>
-              <ul class="tags"><li class="tag">Grid</li><li class="tag">oklch</li><li class="tag">dark mode</li></ul>
+              <p class="project-card__text">Адаптивная панель с карточками метрик и графиком. Вся вёрстка — на Grid и
+                Flexbox.</p>
+              <ul class="tags">
+                <li class="tag">Grid</li>
+                <li class="tag">oklch</li>
+                <li class="tag">dark mode</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -254,12 +303,15 @@
           <article class="project-card">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Мини-магазин»">
               <img src="assets/img/project-2.webp" width="1200" height="1200" loading="lazy"
-                   alt="Каталог интернет-магазина из четырёх карточек товаров">
+                alt="Каталог интернет-магазина из четырёх карточек товаров">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Мини-магазин</h3>
               <p class="project-card__text">Каталог товаров с карточками и аккуратными hover-эффектами.</p>
-              <ul class="tags"><li class="tag">Flexbox</li><li class="tag">hover</li></ul>
+              <ul class="tags">
+                <li class="tag">Flexbox</li>
+                <li class="tag">hover</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -267,12 +319,15 @@
           <article class="project-card">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Блог о путешествиях»">
               <img src="assets/img/project-3.webp" width="1200" height="900" loading="lazy"
-                   alt="Страница блога с крупной обложкой и текстом статьи">
+                alt="Страница блога с крупной обложкой и текстом статьи">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Блог о путешествиях</h3>
               <p class="project-card__text">Читаемая типографика, удобная ширина строки и красивые цитаты.</p>
-              <ul class="tags"><li class="tag">типографика</li><li class="tag">шрифты</li></ul>
+              <ul class="tags">
+                <li class="tag">типографика</li>
+                <li class="tag">шрифты</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -280,12 +335,15 @@
           <article class="project-card">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Список дел»">
               <img src="assets/img/project-4.webp" width="1000" height="1250" loading="lazy"
-                   alt="Мобильное приложение со списком задач">
+                alt="Мобильное приложение со списком задач">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Список дел</h3>
               <p class="project-card__text">Мобильный интерфейс с аккуратными формами и состояниями.</p>
-              <ul class="tags"><li class="tag">формы</li><li class="tag">:checked</li></ul>
+              <ul class="tags">
+                <li class="tag">формы</li>
+                <li class="tag">:checked</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -293,12 +351,15 @@
           <article class="project-card">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Лендинг студии»">
               <img src="assets/img/project-5.webp" width="1600" height="1000" loading="lazy"
-                   alt="Лендинг с крупным заголовком, кнопкой и яркой иллюстрацией">
+                alt="Лендинг с крупным заголовком, кнопкой и яркой иллюстрацией">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Лендинг студии</h3>
               <p class="project-card__text">Яркий первый экран с градиентами, тенями и анимацией появления.</p>
-              <ul class="tags"><li class="tag">градиенты</li><li class="tag">анимация</li></ul>
+              <ul class="tags">
+                <li class="tag">градиенты</li>
+                <li class="tag">анимация</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -306,12 +367,15 @@
           <article class="project-card project-card--featured">
             <a class="project-card__media" href="#" aria-label="Открыть проект «Игровая статистика»">
               <img src="assets/img/project-6.webp" width="1600" height="900" loading="lazy"
-                   alt="Игровая статистика с кольцом прогресса и шкалами">
+                alt="Игровая статистика с кольцом прогресса и шкалами">
             </a>
             <div class="project-card__body">
               <h3 class="project-card__title">Игровая статистика</h3>
               <p class="project-card__text">Тёмная панель игрока с неоновыми акцентами и плавными переходами.</p>
-              <ul class="tags"><li class="tag">transition</li><li class="tag">transform</li></ul>
+              <ul class="tags">
+                <li class="tag">transition</li>
+                <li class="tag">transform</li>
+              </ul>
               <a class="project-card__link" href="#">Смотреть проект <span aria-hidden="true">→</span></a>
             </div>
           </article>
@@ -346,7 +410,8 @@
           <li class="timeline__item">
             <time class="timeline__date" datetime="2026-01">Январь 2026</time>
             <h3 class="timeline__title">Курс по frontend</h3>
-            <p class="timeline__text">Освоил Git, семантику и основы адаптивной вёрстки. Выложил первые работы на GitHub.</p>
+            <p class="timeline__text">Освоил Git, семантику и основы адаптивной вёрстки. Выложил первые работы на
+              GitHub.</p>
           </li>
           <li class="timeline__item">
             <time class="timeline__date" datetime="2026-05">Май 2026</time>
@@ -390,11 +455,13 @@
             <div class="form__row">
               <div class="field">
                 <label class="field__label" for="name">Имя</label>
-                <input class="field__control" id="name" name="name" type="text" placeholder="Как к вам обращаться" required>
+                <input class="field__control" id="name" name="name" type="text" placeholder="Как к вам обращаться"
+                  required>
               </div>
               <div class="field">
                 <label class="field__label" for="email">Email</label>
-                <input class="field__control" id="email" name="email" type="email" placeholder="you@example.com" required>
+                <input class="field__control" id="email" name="email" type="email" placeholder="you@example.com"
+                  required>
               </div>
             </div>
 
@@ -416,7 +483,8 @@
 
             <div class="field">
               <label class="field__label" for="message">Сообщение</label>
-              <textarea class="field__control" id="message" name="message" rows="5" placeholder="Расскажите коротко о задаче"></textarea>
+              <textarea class="field__control" id="message" name="message" rows="5"
+                placeholder="Расскажите коротко о задаче"></textarea>
             </div>
 
             <label class="choice choice--consent">
@@ -447,4 +515,5 @@
   </footer>
 
 </body>
+
 </html>

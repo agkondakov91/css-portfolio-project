@@ -8,20 +8,37 @@
    до любых других правил.
    ========================================================= */
 
-@import url("css/01-syntax.css");   /* синтаксис и специфичность */
-@import url("css/02-box-model.css");   /* блочная модель */
-@import url("css/03-units.css");   /* единицы измерения */
-@import url("css/04-variables.css");   /* css-переменные и современный цвет */
-@import url("css/05-text.css");   /* стили текста */
-@import url("css/06-fonts.css");   /* шрифты */
-@import url("css/07-pseudo.css");   /* псевдоклассы и псевдоэлементы */
-@import url("css/08-images.css");   /* изображения */
-@import url("css/09-forms.css");   /* стилизация форм */
-@import url("css/10-flexbox.css");   /* flexbox */
-@import url("css/11-grid.css");   /* grid */
-@import url("css/12-positioning.css");   /* позиционирование и z-index */
-@import url("css/13-shadows-gradients.css");   /* тени и градиенты */
-@import url("css/14-filters.css");   /* фильтры и маски */
-@import url("css/15-transforms.css");   /* трансформации */
-@import url("css/16-transitions.css");   /* transition */
-@import url("css/17-animation.css");   /* анимация (@keyframes) */
+@import url("./css/01-syntax.css");
+/* синтаксис и специфичность */
+@import url("css/02-box-model.css");
+/* блочная модель */
+@import url("css/03-units.css");
+/* единицы измерения */
+@import url("css/04-variables.css");
+/* css-переменные и современный цвет */
+@import url("css/05-text.css");
+/* стили текста */
+@import url("css/06-fonts.css");
+/* шрифты */
+@import url("css/07-pseudo.css");
+/* псевдоклассы и псевдоэлементы */
+@import url("css/08-images.css");
+/* изображения */
+@import url("css/09-forms.css");
+/* стилизация форм */
+@import url("css/10-flexbox.css");
+/* flexbox */
+@import url("css/11-grid.css");
+/* grid */
+@import url("css/12-positioning.css");
+/* позиционирование и z-index */
+@import url("css/13-shadows-gradients.css");
+/* тени и градиенты */
+@import url("css/14-filters.css");
+/* фильтры и маски */
+@import url("css/15-transforms.css");
+/* трансформации */
+@import url("css/16-transitions.css");
+/* transition */
+@import url("css/17-animation.css");
+/* анимация (@keyframes) */
