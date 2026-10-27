@@ -1,5 +1,27 @@
-/* =========================================================
-   03 · ЕДИНИЦЫ ИЗМЕРЕНИЯ
-   Что здесь пишем: rem, %, svh, ch, clamp(), min(): ширина контейнера, высота первого экрана, отступы
-   ========================================================= */
+.container {
+   width: min(100% - 2 * var(--gutter), 72rem);
+}
 
+.hero {
+   min-height: calc(100svh - var(--header-h));
+   display: grid;
+   align-items: center;
+}
+
+.about__text,
+.section__lead,
+.timeline__text {
+   max-width: 60ch;
+}
+
+.hero__lead {
+   max-width: 46ch;
+}
+
+.hero__visual {
+   width: min(100%, 30rem);
+}
+
+section[id] {
+   scroll-margin-top: var(--header-h);
+}
