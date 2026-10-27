@@ -1,5 +1,145 @@
 /* =========================================================
    05 · СТИЛИ ТЕКСТА
-   Что здесь пишем: font-size, line-height, letter-spacing, text-wrap, вес, цвет, регистр
+   font-size, line-height, letter-spacing, text-wrap, вес, цвет, регистр
    ========================================================= */
 
+body {
+   font-size: 1.0625rem;
+   line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+   font-weight: 400;
+   line-height: 1.12;
+   letter-spacing: -0.025em;
+   text-wrap: balance;
+   overflow-wrap: break-word;
+}
+
+.hero__title {
+   font-size: clamp(1.85rem, 0.8rem + 4.8vw, 4.5rem);
+   line-height: 1.05;
+   letter-spacing: -0.04em;
+   margin-bottom: 1.75rem;
+}
+
+.hero__lead {
+   font-size: 1.2rem;
+   color: var(--muted);
+   margin-bottom: 2.5rem;
+}
+
+.eyebrow,
+.stat__label,
+.facts dt,
+.timeline__date {
+   font-size: 0.8rem;
+   letter-spacing: 0.1em;
+   text-transform: uppercase;
+   color: var(--muted);
+}
+
+.section__title {
+   font-size: clamp(1.9rem, 1.1rem + 2.8vw, 3.25rem);
+}
+
+.section__lead {
+   color: var(--muted);
+   font-size: 1.15rem;
+}
+
+.about__lead {
+   font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem);
+   line-height: 1.45;
+   letter-spacing: -0.01em;
+   margin-bottom: 1.5rem;
+}
+
+.about__text p {
+   text-wrap: pretty;
+}
+
+.about__text p:not(.about__lead) {
+   color: var(--muted);
+}
+
+.stat__num {
+   font-size: clamp(1.75rem, 1.2rem + 1.6vw, 2.5rem);
+   line-height: 1;
+}
+
+.facts dd {
+   font-weight: 600;
+}
+
+.skill-card__title,
+.project-card__title {
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+.skill-card__text,
+.project-card__text {
+   color: var(--muted);
+}
+
+.tag {
+   font-size: 0.8rem;
+   font-weight: 600;
+   color: var(--muted);
+}
+
+.btn {
+   font-weight: 700;
+   font-size: 0.95rem;
+   line-height: 1;
+}
+
+.nav__link {
+   font-size: 0.95rem;
+   font-weight: 600;
+   color: var(--muted);
+}
+
+.logo {
+   font-size: 1.05rem;
+   font-weight: 600;
+   letter-spacing: -0.02em;
+}
+
+.project-card__link {
+   font-weight: 700;
+   font-size: 0.95rem;
+}
+
+.contact__text {
+   font-size: 1.2rem;
+   color: var(--muted);
+   margin-bottom: 2rem;
+}
+
+.contact__list {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+
+.timeline__title {
+   font-size: 1.35rem;
+   margin-block: 0.4rem 0.5rem;
+}
+
+.timeline__text {
+   color: var(--muted);
+}
+
+.field__label {
+   font-size: 0.9rem;
+   font-weight: 600;
+}
+
+.site-footer {
+   font-size: 0.9rem;
+   color: var(--muted);
+}
